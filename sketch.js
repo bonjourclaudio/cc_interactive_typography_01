@@ -4,7 +4,7 @@ let textTexture;
 let charset = "a" // alternatives: ↑↗→↘↓↙←↖
 
 function preload() {
-    font = loadFont("Maax Mono - Bold-205TF.otf");
+    font = loadFont("./assets/Maax Mono - Bold-205TF.otf");
 }
 
 function setup() {
