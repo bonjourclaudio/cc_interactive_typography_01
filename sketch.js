@@ -3,6 +3,7 @@ let font;
 let textTexture;
 let charset = "a"; // Alternatives: ↑↗→↘↓↙←↖
 let layerCount = 0;
+let maxLayers = 50;
 
 function preload() {
     font = loadFont("./assets/Maax Mono - Bold-205TF.otf");
@@ -51,7 +52,7 @@ function draw() {
     layerCount++;
 
     // Draw a black overlay after 100 layers for performance optimization
-    if (layerCount > 100) {
+    if (layerCount > maxLayers) {
         push();
         noStroke();
         fill(0, 10);
